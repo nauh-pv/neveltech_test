@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Games",
+    "items": [
+      {
+        "title": "Game 1",
+        "link": "#"
+      },
+      {
+        "title": "Game 2",
+        "link": "#"
+      },
+      {
+        "title": "Game 3",
+        "link": "#"
+      },
+      {
+        "title": "Game 14",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "About",
+    "items": [
+      {
+        "title": "About Us",
+        "link": "#"
+      },
+      {
+        "title": "Promotions",
+        "link": "#"
+      },
+      {
+        "title": "VIP",
+        "link": "#"
+      },
+      {
+        "title": "Help Center",
+        "link": "#"
+      },
+      {
+        "title": "Awards & Certificates",
+        "link": "#"
+      },
+      {
+        "title": "App",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "Legal Information",
+    "items": [
+      {
+        "title": "General Terms & Conditions",
+        "link": "#"
+      },
+      {
+        "title": "Responsible Gaming Policy",
+        "link": "#"
+      },
+      {
+        "title": "Sports Betting Rules",
+        "link": "#"
+      },
+      {
+        "title": "Privacy and Cookies Policy",
+        "link": "#"
+      },
+      {
+        "title": "Payment Methods",
+        "link": "#"
+      },
+      {
+        "title": "Limits",
+        "link": "#"
+      }
+    ]
+  }
+]
