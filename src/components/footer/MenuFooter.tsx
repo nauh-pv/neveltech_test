@@ -1,9 +1,9 @@
-import data from "@/src/assets/dataMenuFooter.json";
+import data from "@/src/assets/dataLayout.json";
 
 const MenuFooter = () => {
   return (
     <>
-      {data.map((item, index) => {
+      {data.menuFooter.map((item, index) => {
         return (
           <div key={index} className="flex flex-col gap-5">
             <h4>{item.title}</h4>

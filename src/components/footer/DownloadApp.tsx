@@ -13,7 +13,7 @@ const DownloadApp = () => {
   ];
   return (
     <div className="w-[180px] flex flex-col gap-[8px]">
-      <div className="bg-secondAzure flex items-center rounded-[8px] py-[6px] px-[10px]">
+      <div className="bg-thirdAzure flex items-center rounded-[8px] py-[6px] px-[10px]">
         <Image
           src="/images/logo-ios.png"
           alt="Logo IOS"
@@ -28,7 +28,7 @@ const DownloadApp = () => {
           return (
             <div
               key={index}
-              className="bg-secondAzure w-[50%] flex flex-col items-center rounded-[10px] px-[11.55px]"
+              className="bg-thirdAzure w-[50%] flex flex-col items-center rounded-[10px] px-[11.55px]"
             >
               <Image
                 src={item.logo}

@@ -1,0 +1,65 @@
+{
+  "listImgStatus": {
+    "1": "/svg/hot.svg",
+    "2": "/svg/new.svg"
+  },
+  "listImgSaleOff": {
+    "5": "/svg/sale_off_5.svg"
+  },
+  "exclusiveGames": [
+    {
+      "imgBackground": "/images/ExclusiveGames/image.png",
+      "imgStatus": 2,
+      "imgSaleOff": 0,
+      "name": "100HP GAMING"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image1.png",
+      "imgStatus": 1,
+      "imgSaleOff": 5,
+      "name": "VELIPLAY"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image2.png",
+      "imgStatus": 1,
+      "imgSaleOff": 5,
+      "name": "EVOLUTION"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image3.png",
+      "imgStatus": 0,
+      "imgSaleOff": 0,
+      "name": "VELIPLAY"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image4.png",
+      "imgStatus": 0,
+      "imgSaleOff": 5,
+      "name": "ONLYPLAY"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image5.png",
+      "imgStatus": 1,
+      "imgSaleOff": 5,
+      "name": "VELIPLAY"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image6.png",
+      "imgStatus": 1,
+      "imgSaleOff": 0,
+      "name": "VELIPLAY"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image7.png",
+      "imgStatus": 0,
+      "imgSaleOff": 5,
+      "name": "VELIPLAY"
+    },
+    {
+      "imgBackground": "/images/ExclusiveGames/image1.png",
+      "imgStatus": 2,
+      "imgSaleOff": 0,
+      "name": "VELIPLAY"
+    }
+  ]
+}

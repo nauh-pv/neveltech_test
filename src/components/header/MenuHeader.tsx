@@ -2,21 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import data from "@/src/assets/dataLayout.json";
 
 const MenuHeader = () => {
   const pathname = usePathname();
-
-  const listMenu = [
-    { name: "HOME", path: "/" },
-    { name: "GAME", path: "/game" },
-    { name: "INFOR", path: "/infor" },
-    { name: "NEWS", path: "/news" },
-    { name: "PROMOTIONS", path: "/promotions" },
-    { name: "VIP", path: "/vip" },
-  ];
   return (
     <ul className="flex justify-center gap-5">
-      {listMenu.map((item, index) => {
+      {data.menuHeader.map((item, index) => {
         const isActive = pathname === item.path;
         return (
           <li
@@ -32,4 +24,5 @@ const MenuHeader = () => {
     </ul>
   );
 };
+
 export default MenuHeader;

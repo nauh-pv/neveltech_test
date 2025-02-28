@@ -4,8 +4,8 @@ import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 
-import MenuHeader from "@/src/components/MenuHeader";
-import iconSizes from "../config/iconSizes";
+import MenuHeader from "@/src/components/header/MenuHeader";
+import iconSizes from "../../config/iconSizes";
 
 const Header = () => {
   return (
