@@ -85,3 +85,7 @@ h4 {
 h3 {
   @apply text-[30px] leading-[31.2px] font-medium text-white;
 }
+
+h2 {
+  @apply text-[32px] leading-[46.24px] font-medium text-white;
+}
