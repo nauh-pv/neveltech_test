@@ -13,13 +13,15 @@ export default {
         foreground: "var(--foreground)",
 
         primaryGreen: "#01AF70",
+        secondGreen: "#147261",
+        thirdGreen: "#082C25",
 
         primaryBlue: "#3555FF",
 
         primaryRed: "#FF0960",
 
         primaryWhite: "#CAD3E1",
-        secondWhite: "#90A2BD99",
+        secondWhite: "#90A2BD",
 
         primaryAzure: "#03193A",
         secondAzure: "#12294A",
