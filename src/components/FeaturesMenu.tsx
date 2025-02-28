@@ -19,7 +19,7 @@ const FeaturesMenu = () => {
               height={50}
               className="w-[24px] h-fit"
             />
-            <span className="text-[16px] leading-[22.4]">{item.name}</span>
+            <span className="text-[16px] leading-[22.4px]">{item.name}</span>
           </div>
         );
       })}

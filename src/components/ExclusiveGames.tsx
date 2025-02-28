@@ -11,7 +11,7 @@ const ExclusiveGames = () => {
         <h2>Exclusive Games</h2>
         <SeeAll />
       </div>
-      <div className="flex gap-4 w-[calc(100vw - 480px)] justify-between">
+      <div className="flex gap-4 w-[calc(100vw - 480px)] justify-between overflow-hidden">
         {data.exclusiveGames.map((game, index) => {
           return (
             <GameCard
