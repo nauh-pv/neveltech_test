@@ -9,7 +9,6 @@ const ExclusiveGames = () => {
 
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
-  // Hàm xử lý khi kéo chuột
   const handleMouseDown = (e: React.MouseEvent) => {
     e.preventDefault();
     const startX = e.clientX;
@@ -41,7 +40,7 @@ const ExclusiveGames = () => {
         <SeeAll />
       </div>
       <div
-        className="flex gap-4 w-[calc(100vw - 480px)] justify-between overflow-x-auto hide-scrollbar"
+        className="flex gap-4 w-[calc(100vw - 480px)] justify-start overflow-x-auto hide-scrollbar"
         ref={scrollContainerRef}
         onMouseDown={handleMouseDown}
       >
