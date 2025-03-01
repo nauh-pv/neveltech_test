@@ -17,7 +17,7 @@ const FeaturesMenu = () => {
         return (
           <div
             key={index}
-            className={`xs:flex items-center justify-center rounded-[10px] border-[1px] col-span-1 border-white/10 gap-[13px] pt-[12.7px] pb-[13.5px] ${
+            className={`lg:flex items-center justify-center rounded-[10px] border-[1px] col-span-1 border-white/10 gap-[13px] pt-[12.7px] pb-[13.5px] ${
               item.feature === 1 ? "bg-secondAzure flex" : "hidden"
             }`}
           >
@@ -26,9 +26,9 @@ const FeaturesMenu = () => {
               alt={item.name}
               width={100}
               height={100}
-              className="xs:w-[24px] w-[20px] h-fit"
+              className="lg:w-[24px] w-[20px] h-fit"
             />
-            <span className="xs:text-[16px] text-[14px] xs:leading-[22.4px] leading-[14px]">
+            <span className="lg:text-[16px] text-[14px] lg:leading-[22.4px] leading-[14px]">
               {item.name}
             </span>
           </div>

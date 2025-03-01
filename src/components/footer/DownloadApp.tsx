@@ -12,8 +12,8 @@ const DownloadApp = () => {
     },
   ];
   return (
-    <div className="xs:w-[180px] w-full flex flex-col gap-[8px] px-[16px] xs:px-0 pb-[40px] pb-0">
-      <button className="bg-thirdAzure items-center rounded-[8px] py-[6px] px-[10px] hover:bg-white/15 transition duration-200 xs:flex hidden">
+    <div className="lg:w-[180px] w-full flex flex-col gap-[8px] px-[16px] lg:px-0 pb-[40px] pb-0">
+      <button className="bg-thirdAzure items-center rounded-[8px] py-[6px] px-[10px] hover:bg-white/15 transition duration-200 lg:flex hidden">
         <Image
           src="/images/logo-ios.png"
           alt="Logo IOS"
@@ -23,7 +23,7 @@ const DownloadApp = () => {
         />
         <h4>Bluechip App for Mac OS</h4>
       </button>
-      <div className="w-full gap-[8px] xs:flex hidden">
+      <div className="w-full gap-[8px] lg:flex hidden">
         {listOperating.map((item, index) => {
           return (
             <button
@@ -42,7 +42,7 @@ const DownloadApp = () => {
           );
         })}
       </div>
-      <div className="flex w-full gap-[8px] xs:hidden">
+      <div className="flex w-full gap-[8px] lg:hidden">
         {listOperating.map((item, index) => {
           return (
             <button

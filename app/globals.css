@@ -87,7 +87,7 @@ h3 {
 }
 
 h2 {
-  @apply xs:text-[32px] text-[16px] uppercase xs:capitalize xs:leading-[46.24px] leading-[14px] font-medium text-white;
+  @apply 2xl:text-[32px] lg:text-[25px] text-[16px] uppercase lg:capitalize lg:leading-[46.24px] leading-[14px] font-medium text-white;
 }
 
 .skewed-banner {
@@ -95,7 +95,7 @@ h2 {
   clip-path: polygon(0% 0%, 100% 0%, 99% 100%, 1.5% 100%);
   width: 1100px;
   height: 423px;
-  border-radius: 0px 0px 20px 20px; /* Bo góc chỉ để làm hiệu ứng */
+  border-radius: 0px 0px 20px 20px;
   position: relative;
 }
 
@@ -132,5 +132,5 @@ h2 {
 }
 
 .responsive-padding {
-  @apply xl:w-[calc(100vw-490px)] xs:w-[calc(100vw-200px)] w-[calc(100vw-32px)];
+  @apply xl:w-[calc(100vw-490px)] lg:w-[calc(100vw-200px)] w-[calc(100vw-32px)];
 }

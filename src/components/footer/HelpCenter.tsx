@@ -13,8 +13,8 @@ const HelpCenter = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center xs:gap-10 xs:w-fit w-full px-[16px] xs:px-0">
-      <div className="gap-4 flex-col items-center xs:flex hidden">
+    <div className="flex flex-col items-center lg:gap-10 lg:w-fit w-full px-[16px] lg:px-0">
+      <div className="gap-4 flex-col items-center lg:flex hidden">
         <div className="flex flex-col gap-[8px]">
           <h3 className="text-xl">Help Center</h3>
           <h5>If you have any questions?</h5>
@@ -23,10 +23,10 @@ const HelpCenter = () => {
           Get answers
         </button>
       </div>
-      <h4 className="xs:hidden w-full flex items-center justify-center py-[20px]">
+      <h4 className="lg:hidden w-full flex items-center justify-center py-[20px]">
         Follow Us
       </h4>
-      <div className="flex gap-6 items-center xs:px-0 px-[35px] xs:mb-0 mb-14">
+      <div className="flex gap-6 items-center lg:px-0 px-[35px] lg:mb-0 mb-14">
         {listSocial.map((icon, index) => {
           return (
             <a
@@ -38,7 +38,7 @@ const HelpCenter = () => {
               <Image
                 src={icon.icon}
                 alt="Instagram"
-                className="xs:w-6 w-10 h-fit xs:h-6"
+                className="lg:w-6 w-10 h-fit lg:h-6"
                 width={100}
                 height={100}
               />
@@ -46,7 +46,7 @@ const HelpCenter = () => {
           );
         })}
       </div>
-      <div className="gap-4 items-center justify-center xs:hidden flex bg-thirdAzure rounded-[10px] w-full py-[18px] mb-4">
+      <div className="gap-4 items-center justify-center lg:hidden flex bg-thirdAzure rounded-[10px] w-full py-[18px] mb-4">
         <div className="flex flex-col gap-[1px]">
           <h3 className="text-xl">Help Center</h3>
           <h5>If you have any questions?</h5>

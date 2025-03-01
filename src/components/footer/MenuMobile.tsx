@@ -10,7 +10,7 @@ const MenuMobile = () => {
   };
 
   return (
-    <div className="xs:hidden w-full flex flex-col gap-3 px-[16px]">
+    <div className="lg:hidden w-full flex flex-col gap-3 px-[16px]">
       {data.menuFooter.map((item, index) => (
         <div key={index} className="w-full">
           <button

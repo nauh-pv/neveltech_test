@@ -10,7 +10,7 @@ const certifications = [
 
 const FooterCertifications = () => {
   return (
-    <div className="bg-primaryAzure py-10 px-4 flex justify-center xs:hidden">
+    <div className="bg-primaryAzure py-10 px-4 flex justify-center lg:hidden">
       <div className="w-full flex flex-wrap justify-center gap-8 items-center">
         {certifications.map((cert, index) => (
           <Image
