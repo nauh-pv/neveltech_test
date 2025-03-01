@@ -6,7 +6,7 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen h-full flex flex-col relative w-full gap-10">
       <Header />
       <main
-        className="content flex-1 mx-auto pt-[66px] flex items-center flex-col"
+        className="content flex-1 w-full overflow-hidden pt-[66px] flex items-center flex-col"
         role="main"
       >
         {children}
