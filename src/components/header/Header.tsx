@@ -8,6 +8,7 @@ import MenuHeaderDesktop from "@/src/components/header/MenuHeaderDesktop";
 import iconSizes from "../../config/iconSizes";
 import MenuHeaderMobile from "./MenuHeaderMobile";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
@@ -20,7 +21,7 @@ const Header = () => {
             <button onClick={() => setIsOpenMenuMobile(true)}>
               <HiOutlineBars3CenterLeft size={iconSizes.large} />
             </button>
-            <a href="/">
+            <Link href="/">
               <Image
                 src="/images/White_logo.png"
                 alt="Logo white"
@@ -28,7 +29,7 @@ const Header = () => {
                 height={100}
                 className="lg:h-[30px] lg:w-[53px] h-[18px] w-[32px]"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-[32px]">
             <button className="hover:text-primaryBlue transition duration-200 text-white min-[1325px]:block hidden">

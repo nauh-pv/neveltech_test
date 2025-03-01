@@ -25,7 +25,7 @@ const BannerMobile = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
     }, 7000);
     return () => clearInterval(interval);
-  }, []);
+  }, [banners]);
 
   return (
     <>
