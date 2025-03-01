@@ -9,7 +9,7 @@ const AllProviders = () => {
         <h2>All Providers</h2>
         <SeeAll />
       </div>
-      <div className="flex xs:gap-4 gap-[6px] xs:justify-center xs:w-[calc(100vw-480px)] w-[calc(100vw-32px)] justify-start overflow-x-auto hide-scrollbar">
+      <div className="flex xs:gap-4 gap-[6px] 3xl:justify-center responsive-padding justify-start overflow-x-auto hide-scrollbar">
         {data.allProviders
           ? data.allProviders.map((provider, index) => (
               <ProviderCard

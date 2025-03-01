@@ -8,7 +8,7 @@ interface ProviderCardProps {
 
 const ProviderCard = ({ name, totalGame, logo }: ProviderCardProps) => {
   return (
-    <div className="w-[120px] xs:w-[155px] flex-shrink-0 object-cover cursor-pointer hover:pt-0 h-[122px] pt-[16px] flex flex-col items-center justify-center hover:pb-3 pb-20 xs:pb-[76px] bg-secondAzure relative rounded-[8px] group duration-200 transition ease-in-out delay-200">
+    <div className="w-[120px] lg:w-[155px] flex-shrink-0 object-cover cursor-pointer hover:pt-0 h-[122px] pt-[16px] flex flex-col items-center justify-center hover:pb-3 pb-20 lg:pb-[76px] bg-secondAzure relative rounded-[8px] group duration-200 transition ease-in-out delay-200">
       <Image
         src={logo}
         alt="Logo Provider"

@@ -1,110 +1,86 @@
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { CiCircleInfo } from "react-icons/ci";
 import iconSizes from "../config/iconSizes";
+import data from "@/src/assets/dataHome.json";
 
 const Banner = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const banners = data.banners || [];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
+    }, 7000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <div className="min-h-[585px] w-[100vw] relative overflow-hidden items-center justify-center gap-10 xs:flex hidden">
-      <div className="absolute top-0 -left-[37%] h-full overflow-hidden w-[60%] opacity-40 scale-[0.8]">
-        <CiCircleInfo
-          size={iconSizes.medium}
-          className="absolute top-24 right-10"
-        />
-        <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
-          <div className="flex flex-col items-center justify-center gap-2 w-[50%]">
-            <p className="px-[16.4px] py-[5.7px] rounded-full text-white bg-white/10">
-              Exclusive Tournament
-            </p>
-            <p className="text-[42px] leading-[59px] font-extrabold text-white flex items-center justify-center max-w-[480px] text-center">
-              Piggy Christmas Tap: €35,000 For Your Wins
-            </p>
-            <button className="bg-primaryRed pt-[16px] pb-[12px] px-[87px] text-[21px] leading-[21px] font-semibold text-white rounded-[10px] uppercase">
-              Join and win
-            </button>
-          </div>
-          <Image
-            src="/images/Banner/image1.png"
-            alt="Image pig banner"
-            width={500}
-            height={500}
-          />
-        </div>
-        <Image
-          src="/svg/bg_banner_blue.svg"
-          alt="banner"
-          width={500}
-          height={1000}
-          className="w-full h-full"
-        />
-      </div>
-      <div className="absolute top-0 h-full flex items-center justify-center w-[60%] overflow-hidden">
-        <CiCircleInfo
-          size={iconSizes.medium}
-          className="absolute top-24 right-8"
-        />
-        <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
-          <div className="flex flex-col items-center justify-center gap-2 w-[50%]">
-            <p className="px-[16.4px] py-[5.7px] rounded-full text-white bg-white/10">
-              Exclusive Tournament
-            </p>
-            <p className="text-[42px] leading-[59px] font-extrabold text-white flex items-center justify-center max-w-[480px] text-center">
-              Piggy Christmas Tap: €35,000 For Your Wins
-            </p>
-            <button className="bg-primaryRed pt-[16px] pb-[12px] px-[87px] text-[21px] leading-[21px] font-semibold text-white rounded-[10px] uppercase">
-              Join and win
-            </button>
-          </div>
-          <Image
-            src="/images/Banner/image.png"
-            alt="Image pig banner"
-            width={500}
-            height={500}
-          />
-        </div>
-        <Image
-          src="/svg/bg_banner.svg"
-          alt="banner"
-          width={500}
-          height={1000}
-          className="w-full h-full"
-        />
-      </div>
-      <div className="absolute top-0 -right-[37%] h-full overflow-hidden w-[60%] opacity-40 scale-[0.8]">
-        <CiCircleInfo
-          size={iconSizes.medium}
-          className="absolute top-24 right-8"
-        />
-        <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
-          <div className="flex flex-col items-center justify-center gap-2 w-[50%]">
-            <p className="px-[16.4px] py-[5.7px] rounded-full text-white bg-white/10">
-              CashBack
-            </p>
-            <p className="text-[42px] leading-[59px] font-extrabold text-white flex items-center justify-center max-w-[480px] text-center">
-              Win or Get Back up to €100
-            </p>
-            <button className="bg-primaryRed pt-[16px] pb-[12px] px-[87px] text-[21px] leading-[21px] font-semibold text-white rounded-[10px] uppercase">
-              Discover More
-            </button>
-            <p className="text-white text-[13.75px] leading-[19.25px] w-[367px] flex content-center text-center mt-2">
-              See your best cashback offers for Slots, Live Games, and Crash
-              Games. Play and get your money back daily!
-            </p>
-          </div>
-          <Image
-            src="/images/Banner/image.png"
-            alt="Image pig banner"
-            width={500}
-            height={500}
-          />
-        </div>
-        <Image
-          src="/svg/bg_banner_blue.svg"
-          alt="banner"
-          width={500}
-          height={1000}
-          className="w-full h-full"
-        />
-      </div>
+    <div className="relative xl:flex items-center justify-center w-full 3xl:h-[585px] 2xl:h-[530px] xl:h-[450px] h-[350px] overflow-hidden bg-darkBlue hidden">
+      {banners.map((banner, index) => {
+        const isActive = index === currentIndex;
+        const isPrev = (index + 1) % banners.length === currentIndex;
+        const isNext =
+          (index - 1 + banners.length) % banners.length === currentIndex;
+
+        return (
+          <motion.div
+            key={banner.id}
+            initial={{ opacity: 0.4, scale: 0.8 }}
+            animate={{
+              opacity: isActive ? 1 : 0.4,
+              scale: isActive ? 1 : 0.8,
+              x: isPrev ? "-95%" : isNext ? "95%" : "0%",
+            }}
+            transition={{ duration: 0.5 }}
+            className={`absolute w-[60%] flex flex-row items-center justify-between p-6 rounded-lg text-white transition-transform transform ${
+              isActive ? "z-10" : ""
+            }`}
+            onClick={() => goToSlide(index)}
+          >
+            <Image
+              src={banner.background}
+              alt="Background image"
+              layout="fill"
+              className="absolute w-full h-full -z-10"
+            />
+            <div className="absolute 3xl:top-14 xl:top-10 top-6 3xl:right-8 xl:right-10 right-10 cursor-pointer hover:text-primaryBlue transition duration-200">
+              <CiCircleInfo size={iconSizes.medium} />
+            </div>
+            <div className="flex flex-col items-center justify-center xl:w-[50%] w-[65%] 2xl:gap-3 xl:gap-[8px] gap-1">
+              <p className="px-4 py-2 rounded-full bg-white/10">
+                {banner.subtitle}
+              </p>
+              <p className="2xl:text-4xl xl:text-3xl text-2xl font-extrabold 2xl:w-[420px] w-[300px] leading-[40px] 2xl:leading-[59px] text-center">
+                {banner.title}
+              </p>
+              <button
+                className="bg-primaryRed hover:bg-primaryRed/90 transition duration-200 xl:py-[14px] py-[10px] 2xl:px-[87px] px-[50px] 2xl:text-[21px] text-[18px] leading-[21px] 
+              font-semibold text-white rounded-[10px] uppercase"
+              >
+                {banner.buttonText}
+              </button>
+              {banner.description && (
+                <p className="text-white leading-[19px] 2xl:px-[60px] xl:px-[30px] px-[15px] xl:block hidden mt-2 text-center">
+                  {banner.description}
+                </p>
+              )}
+            </div>
+            <Image
+              src={banner.image}
+              alt="Banner image"
+              width={500}
+              height={500}
+              className="ml-6 3xl:w-[500px] 2xl:w-[400px] xl:w-[350px] w-[250px] h-fit"
+            />
+          </motion.div>
+        );
+      })}
     </div>
   );
 };

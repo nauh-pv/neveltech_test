@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import data from "@/src/assets/dataLayout.json";
 
-const MenuHeader = () => {
+const MenuHeaderDesktop = () => {
   const pathname = usePathname();
   return (
-    <ul className=" xs:flex justify-center gap-5 hidden">
+    <ul className=" lg:flex justify-center gap-5 hidden">
       {data.menuHeader.map((item, index) => {
         const isActive = pathname === item.path;
         return (
@@ -25,4 +25,4 @@ const MenuHeader = () => {
   );
 };
 
-export default MenuHeader;
+export default MenuHeaderDesktop;
