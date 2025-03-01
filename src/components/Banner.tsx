@@ -14,7 +14,7 @@ const Banner = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
     }, 7000);
     return () => clearInterval(interval);
-  }, []);
+  }, [banners]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
