@@ -32,6 +32,15 @@ export default {
         secondBlack: "#111315CC",
       },
     },
+    screens: {
+      ss: "375px",
+      xs: "430px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 } satisfies Config;
