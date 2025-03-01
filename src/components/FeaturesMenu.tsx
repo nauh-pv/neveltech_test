@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const FeaturesMenu = () => {
   return (
-    <div className="pb-[30px] gap-[10px] grid h-fit w-full grid-cols-7">
+    <div className="pb-[30px] gap-[10px] grid h-fit w-full grid-cols-7 border-b-[1px] border-white/5">
       {data.featuresMenu.map((item, index) => {
         return (
           <div

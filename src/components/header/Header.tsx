@@ -9,7 +9,7 @@ import iconSizes from "../../config/iconSizes";
 
 const Header = () => {
   return (
-    <header className="py-[16px] fixed z-50 w-full h-fit flex items-center justify-between px-[240px]">
+    <header className="py-[16px] fixed z-50 w-full h-fit flex items-center justify-between px-[240px] border-b-[1px] border-white/5 shadow-[#03193A66]/40 shadow-sm">
       <div className="flex items-center gap-[57px]">
         <div className="gap-[6px] flex items-center">
           <button>
