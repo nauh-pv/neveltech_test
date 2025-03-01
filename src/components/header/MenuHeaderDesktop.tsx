@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import data from "@/src/assets/dataLayout.json";
 
-const MenuHeader = () => {
+const MenuHeaderDesktop = () => {
   const pathname = usePathname();
   return (
     <ul className=" lg:flex justify-center gap-5 hidden">
@@ -25,4 +25,4 @@ const MenuHeader = () => {
   );
 };
 
-export default MenuHeader;
+export default MenuHeaderDesktop;
