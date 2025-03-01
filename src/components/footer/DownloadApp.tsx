@@ -42,7 +42,7 @@ const DownloadApp = () => {
           );
         })}
       </div>
-      <div className="flex w-full gap-[8px]">
+      <div className="flex w-full gap-[8px] xs:hidden">
         {listOperating.map((item, index) => {
           return (
             <button

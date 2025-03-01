@@ -4,7 +4,7 @@ import ProviderCard from "./ProviderCard";
 
 const AllProviders = () => {
   return (
-    <div className="flex flex-col xs:gap-8 gap-3">
+    <div className="flex flex-col xs:gap-8 gap-3 w-full">
       <div className="flex items-center justify-between">
         <h2>All Providers</h2>
         <SeeAll />
