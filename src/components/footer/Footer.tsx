@@ -6,7 +6,7 @@ import MenuMobile from "./MenuMobile";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full flex-col xs:flex-row justify-between xs:px-[240px] xs:py-[60px] pt-[40px] bg-secondAzure">
+    <footer className="flex w-full flex-col xs:flex-row justify-between xl:px-[240px] xs:px-[100px] xs:py-[60px] pt-[40px] bg-secondAzure">
       <MenuMobile />
       <HelpCenter />
       <MenuDesktop />

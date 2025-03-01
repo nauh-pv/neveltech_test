@@ -9,7 +9,7 @@ import iconSizes from "../../config/iconSizes";
 
 const Header = () => {
   return (
-    <header className="py-[16px] fixed z-50 w-full h-fit flex items-center justify-between xs:px-[240px] px-[16px] border-b-[1px] border-white/5 shadow-[#03193A66]/40 shadow-sm bg-primaryAzure">
+    <header className="py-[16px] fixed z-50 w-full h-fit flex items-center justify-between xl:px-[240px] xs:px-[100px] px-[16px] border-b-[1px] border-white/5 shadow-[#03193A66]/40 shadow-sm bg-primaryAzure">
       <div className="flex items-center gap-[57px]">
         <div className="gap-[6px] flex items-center">
           <button>
@@ -26,7 +26,7 @@ const Header = () => {
           </a>
         </div>
         <div className="flex items-center gap-[32px]">
-          <button className="hover:text-primaryBlue transition duration-200 text-white xs:block hidden">
+          <button className="hover:text-primaryBlue transition duration-200 text-white min-[1325px]:block hidden">
             <CiSearch size={iconSizes.large} />
           </button>
           <MenuHeader />

@@ -46,7 +46,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center w-full h-[585px] overflow-hidden bg-darkBlue">
+    <div className="relative flex items-center justify-center w-full 3xl:h-[585px] 2xl:h-[530px] xl:h-[450px] h-[350px] overflow-hidden bg-darkBlue">
       {banners.map((banner, index) => {
         const isActive = index === currentIndex;
         const isPrev = (index + 1) % banners.length === currentIndex;
@@ -74,18 +74,21 @@ const Banner = () => {
               layout="fill"
               className="absolute w-full h-full -z-10"
             />
-            <div className="flex flex-col items-center justify-center w-[50%] gap-3">
+            <div className="flex flex-col items-center justify-center xl:w-[50%] w-[65%] 2xl:gap-3 xl:gap-[8px] gap-1">
               <p className="px-4 py-2 rounded-full bg-white/10">
                 {banner.subtitle}
               </p>
-              <p className="text-4xl font-extrabold w-[420px] leading-[59px] text-center">
+              <p className="2xl:text-4xl xl:text-3xl text-2xl font-extrabold 2xl:w-[420px] w-[300px] leading-[40px] 2xl:leading-[59px] text-center">
                 {banner.title}
               </p>
-              <button className="bg-primaryRed hover:bg-primaryRed/90 transition duration-200 py-[14px] px-[87px] text-[21px] leading-[21px] font-semibold text-white rounded-[10px] uppercase">
+              <button
+                className="bg-primaryRed hover:bg-primaryRed/90 transition duration-200 xl:py-[14px] py-[10px] 2xl:px-[87px] px-[50px] 2xl:text-[21px] text-[18px] leading-[21px] 
+              font-semibold text-white rounded-[10px] uppercase"
+              >
                 {banner.buttonText}
               </button>
               {banner.description && (
-                <p className="text-white leading-[19px] px-[60px] mt-2 text-center">
+                <p className="text-white leading-[19px] 2xl:px-[60px] xl:px-[30px] px-[15px] xl:block hidden mt-2 text-center">
                   {banner.description}
                 </p>
               )}
@@ -95,7 +98,7 @@ const Banner = () => {
               alt="Banner image"
               width={500}
               height={500}
-              className="ml-6"
+              className="ml-6 3xl:w-[500px] 2xl:w-[400px] xl:w-[350px] w-[250px] h-fit"
             />
           </motion.div>
         );

@@ -130,3 +130,7 @@ h2 {
 .cursor-grabbing {
   cursor: grabbing;
 }
+
+.responsive-padding {
+  @apply xl:w-[calc(100vw-490px)] xs:w-[calc(100vw-200px)] w-[calc(100vw-32px)];
+}

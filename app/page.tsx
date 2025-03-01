@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <DefaultLayout>
       <Banner />
-      <div className="flex flex-col gap-8 xs:w-[calc(100vw-490px)] w-[calc(100vw-32px)]">
+      <div className="flex flex-col gap-8 responsive-padding">
         <FeaturesMenu />
         <ExclusiveGames />
         <AllProviders />

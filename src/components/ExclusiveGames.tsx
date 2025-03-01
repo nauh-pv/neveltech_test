@@ -40,7 +40,7 @@ const ExclusiveGames = () => {
         <SeeAll />
       </div>
       <div
-        className="flex xs:gap-4 gap-3 xs:w-[calc(100vw-490px)] w-[calc(100vw-32px)] justify-start overflow-x-auto hide-scrollbar"
+        className="flex xs:gap-4 gap-3 responsive-padding justify-start overflow-x-auto hide-scrollbar"
         ref={scrollContainerRef}
         onMouseDown={handleMouseDown}
       >
