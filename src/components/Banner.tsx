@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { CiCircleInfo } from "react-icons/ci";
+import iconSizes from "../config/iconSizes";
 
 const banners = [
   {
@@ -74,6 +76,9 @@ const Banner = () => {
               layout="fill"
               className="absolute w-full h-full -z-10"
             />
+            <div className="absolute 3xl:top-14 xl:top-10 top-6 3xl:right-8 xl:right-10 right-10 cursor-pointer hover:text-primaryBlue transition duration-200">
+              <CiCircleInfo size={iconSizes.medium} />
+            </div>
             <div className="flex flex-col items-center justify-center xl:w-[50%] w-[65%] 2xl:gap-3 xl:gap-[8px] gap-1">
               <p className="px-4 py-2 rounded-full bg-white/10">
                 {banner.subtitle}
