@@ -19,7 +19,7 @@ const HelpCenter = () => {
           <h3 className="text-xl">Help Center</h3>
           <h5>If you have any questions?</h5>
         </div>
-        <button className="px-[54px] py-[12.85px] text-white rounded-[10px] uppercase bg-primaryBlue text-[13px] leading-[14.3px] tracking-[0.39px]">
+        <button className="px-[40px] pb-[12px] pt-[14px] text-white rounded-[10px] uppercase bg-primaryBlue hover:bg-primaryBlue/90 transition duration-200 text-[13px] leading-[14.3px] tracking-[0.39px] w-full">
           Get answers
         </button>
       </div>

@@ -61,5 +61,84 @@
       "imgSaleOff": 0,
       "name": "VELIPLAY"
     }
+  ],
+  "featuresMenu": [
+    {
+      "icon": "/images/FeaturesMenu/image1.png",
+      "name": "Diamond mine",
+      "feature": 0
+    },
+    {
+      "icon": "/images/FeaturesMenu/image2.png",
+      "name": "VIP",
+      "feature": 0
+    },
+    {
+      "icon": "/images/FeaturesMenu/image3.png",
+      "name": "Promotion",
+      "feature": 0
+    },
+    {
+      "icon": "/images/FeaturesMenu/image4.png",
+      "name": "Hot Match",
+      "feature": 0
+    },
+    {
+      "icon": "/images/FeaturesMenu/image5.png",
+      "name": "P2P Transaction",
+      "feature": 0
+    },
+    {
+      "icon": "/images/FeaturesMenu/image6.png",
+      "name": "Games",
+      "feature": 1
+    },
+    {
+      "icon": "/images/FeaturesMenu/image7.png",
+      "name": "Providers",
+      "feature": 1
+    }
+  ],
+  "allProviders": [
+    {
+      "logo": "/images/AllProviders/evolution.png",
+      "name": "Evolution",
+      "totalGmaes": 312
+    },
+    {
+      "logo": "/images/AllProviders/spribe.png",
+      "name": "Spribe",
+      "totalGmaes": 12
+    },
+    {
+      "logo": "/images/AllProviders/veliplay.png",
+      "name": "Veliplay",
+      "totalGmaes": 9
+    },
+    {
+      "logo": "/images/AllProviders/turbo_games.png",
+      "name": "Turbo Games",
+      "totalGmaes": 36
+    },
+    {
+      "logo": "/images/AllProviders/smart_soft.png",
+      "name": "SmartSorf",
+      "totalGmaes": 37
+    },
+    {
+      "logo": "/images/AllProviders/100hp_gaming.png",
+      "name": "100HP Gaming",
+      "totalGmaes": 7
+    },
+    {
+      "logo": "/images/AllProviders/bgaming.png",
+      "name": "BGaming",
+      "totalGmaes": 166
+    },
+    {
+      "logo": "/images/AllProviders/wazdan.png",
+      "name": "Wazdan",
+      "totalGmaes": 199
+    }
   ]
 }

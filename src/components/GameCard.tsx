@@ -11,7 +11,7 @@ interface GameCardProps {
 
 const GameCard = ({ image, imgStatus, imgSale, name }: GameCardProps) => {
   return (
-    <div className="w-[156px] h-[201.6px]shadow-xl rounded-[8px] relative flex-shrink-0 object-cover group">
+    <div className="w-[156px] h-[201.6px] shadow-xl rounded-[8px] relative flex-shrink-0 object-cover group">
       <div className="w-full h-full rounded-[8px] group-hover:opacity-100 opacity-0 bg-secondBlack absolute transition-opacity duration-300 flex flex-col items-center justify-center gap-[30px] z-10">
         <div className="rounded-full h-[70px] w-[70px] bg-primaryRed flex items-center justify-center cursor-pointer play-group">
           <FaPlay

@@ -11,7 +11,7 @@ const MenuFooter = () => {
               {item.items.map((menu, index) => {
                 return (
                   <li key={index}>
-                    <a href={menu.link}>{menu.title}</a>
+                    <a className="text-secondWhite" href={menu.link}>{menu.title}</a>
                   </li>
                 );
               })}
