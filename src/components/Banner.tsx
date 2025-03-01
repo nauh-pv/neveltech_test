@@ -9,7 +9,7 @@ const banners = [
     subtitle: "Exclusive Tournament",
     buttonText: "Join and win",
     image: "/images/Banner/image.png",
-    background: "/svg/bg_banner.svg",
+    background: "/svg/bg_banner_green.svg",
   },
   {
     id: 2,
