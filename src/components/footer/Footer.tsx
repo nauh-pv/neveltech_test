@@ -1,13 +1,17 @@
+import FooterCertifications from "./Certifications";
 import DownloadApp from "./DownloadApp";
 import HelpCenter from "./HelpCenter";
-import MenuFooter from "./MenuFooter";
+import MenuDesktop from "./MenuDesktop";
+import MenuMobile from "./MenuMobile";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full justify-between px-[240px] py-[60px] bg-secondAzure">
+    <footer className="flex w-full flex-col xs:flex-row justify-between xs:px-[240px] xs:py-[60px] pt-[40px] bg-secondAzure">
+      <MenuMobile />
       <HelpCenter />
-      <MenuFooter />
+      <MenuDesktop />
       <DownloadApp />
+      <FooterCertifications />
     </footer>
   );
 };

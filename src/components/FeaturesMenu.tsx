@@ -1,25 +1,36 @@
 import data from "@/src/assets/dataHome.json";
 import Image from "next/image";
+import { CiSearch } from "react-icons/ci";
+import iconSizes from "../config/iconSizes";
 
 const FeaturesMenu = () => {
   return (
-    <div className="pb-[30px] gap-[10px] grid h-fit w-full grid-cols-7 border-b-[1px] border-white/5">
+    <div className="pb-[30px] gap-[10px] grid h-fit w-full grid-cols-3 xs:grid-cols-7 border-b-[1px] border-white/5">
+      <div
+        className="flex items-center justify-center rounded-[10px] border-[1px] col-span-1 border-white/10 gap-[13px] h-[57px]
+      bg-secondAzure xs:hidden"
+      >
+        <CiSearch size={iconSizes.medium} />
+        <span className="text-[14px] leading-[22.4px]">Search</span>
+      </div>
       {data.featuresMenu.map((item, index) => {
         return (
           <div
             key={index}
-            className={`flex items-center justify-center rounded-[10px] border-[1px] col-span-1 border-white/10 gap-[13px] h-[57px] ${
-              item.feature === 1 && "bg-secondAzure"
+            className={`xs:flex items-center justify-center rounded-[10px] border-[1px] col-span-1 border-white/10 gap-[13px] pt-[12.7px] pb-[13.5px] ${
+              item.feature === 1 ? "bg-secondAzure flex" : "hidden"
             }`}
           >
             <Image
               src={item.icon}
               alt={item.name}
-              width={50}
-              height={50}
-              className="w-[24px] h-fit"
+              width={100}
+              height={100}
+              className="xs:w-[24px] w-[20px] h-fit"
             />
-            <span className="text-[16px] leading-[22.4px]">{item.name}</span>
+            <span className="xs:text-[16px] text-[14px] xs:leading-[22.4px] leading-[14px]">
+              {item.name}
+            </span>
           </div>
         );
       })}

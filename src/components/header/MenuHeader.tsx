@@ -7,7 +7,7 @@ import data from "@/src/assets/dataLayout.json";
 const MenuHeader = () => {
   const pathname = usePathname();
   return (
-    <ul className="flex justify-center gap-5">
+    <ul className=" xs:flex justify-center gap-5 hidden">
       {data.menuHeader.map((item, index) => {
         const isActive = pathname === item.path;
         return (

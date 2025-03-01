@@ -34,13 +34,13 @@ const ExclusiveGames = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex items-center justify-between">
+    <div className="flex flex-col xs:gap-8 gap-3 w-full">
+      <div className="flex items-center justify-between w-full">
         <h2>Exclusive Games</h2>
         <SeeAll />
       </div>
       <div
-        className="flex gap-4 w-[calc(100vw - 480px)] justify-start overflow-x-auto hide-scrollbar"
+        className="flex xs:gap-4 gap-3 xs:w-[calc(100vw-480px)] w-[calc(100vw-32px)] justify-start overflow-x-auto hide-scrollbar"
         ref={scrollContainerRef}
         onMouseDown={handleMouseDown}
       >

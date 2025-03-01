@@ -4,7 +4,7 @@ import iconSizes from "../config/iconSizes";
 
 const Banner = () => {
   return (
-    <div className="min-h-[585px] w-[100vw] relative overflow-hidden flex items-center justify-center gap-10">
+    <div className="min-h-[585px] w-[100vw] relative overflow-hidden items-center justify-center gap-10 xs:flex hidden">
       <div className="absolute top-0 -left-[37%] h-full overflow-hidden w-[60%] opacity-40 scale-[0.8]">
         <CiCircleInfo
           size={iconSizes.medium}

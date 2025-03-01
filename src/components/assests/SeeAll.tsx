@@ -4,7 +4,7 @@ import { CgMenuGridR } from "react-icons/cg";
 const SeeAll = () => {
   return (
     <button className="flex items-center justify-center gap-2 hover:text-primaryBlue duration-200">
-      <span className="uppercase">See all</span>
+      <span className="uppercase xs:block hidden">See all</span>
       <CgMenuGridR size={iconSizes.medium} />
     </button>
   );

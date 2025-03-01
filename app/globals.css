@@ -87,7 +87,7 @@ h3 {
 }
 
 h2 {
-  @apply text-[32px] leading-[46.24px] font-medium text-white;
+  @apply xs:text-[32px] text-[16px] uppercase xs:capitalize xs:leading-[46.24px] leading-[14px] font-medium text-white;
 }
 
 .skewed-banner {
