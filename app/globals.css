@@ -114,3 +114,19 @@ h2 {
 .test {
   @apply !min-h-[585px] !h-[585px] !w-full absolute top-0 left-0;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
