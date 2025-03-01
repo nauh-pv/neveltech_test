@@ -140,5 +140,35 @@
       "name": "Wazdan",
       "totalGmaes": 199
     }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "title": "Piggy Christmas Tap: €35,000 For Your Wins",
+      "subtitle": "Exclusive Tournament",
+      "buttonText": "Join and win",
+      "image": "/images/Banner/image.png",
+      "background": "/svg/bg_banner_green.svg",
+      "backgroundMobile": "/svg/bg_banner_green_mobile.svg"
+    },
+    {
+      "id": 2,
+      "title": "Win or Get Back up to €100",
+      "subtitle": "CashBack",
+      "buttonText": "Discover More",
+      "image": "/images/Banner/image2.png",
+      "background": "/svg/bg_banner_blue.svg",
+      "description": "See your best cashback offers for Slots, Live Games, and Crash Games. Play and get your money back daily!",
+      "backgroundMobile": "/svg/bg_banner_blue_mobile.svg"
+    },
+    {
+      "id": 3,
+      "title": "Piggy Christmas Tap: €35,000 For Your Wins",
+      "subtitle": "Exclusive Tournament",
+      "buttonText": "Join and win",
+      "image": "/images/Banner/image1.png",
+      "background": "/svg/bg_banner_blue.svg",
+      "backgroundMobile": "/svg/bg_banner_blue_mobile.svg"
+    }
   ]
 }

@@ -3,38 +3,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { CiCircleInfo } from "react-icons/ci";
 import iconSizes from "../config/iconSizes";
-
-const banners = [
-  {
-    id: 1,
-    title: "Piggy Christmas Tap: €35,000 For Your Wins",
-    subtitle: "Exclusive Tournament",
-    buttonText: "Join and win",
-    image: "/images/Banner/image.png",
-    background: "/svg/bg_banner_green.svg",
-  },
-  {
-    id: 2,
-    title: "Win or Get Back up to €100",
-    subtitle: "CashBack",
-    buttonText: "Discover More",
-    image: "/images/Banner/image2.png",
-    background: "/svg/bg_banner_blue.svg",
-    description:
-      "See your best cashback offers for Slots, Live Games, and Crash Games. Play and get your money back daily!",
-  },
-  {
-    id: 3,
-    title: "Piggy Christmas Tap: €35,000 For Your Wins",
-    subtitle: "Exclusive Tournament",
-    buttonText: "Join and win",
-    image: "/images/Banner/image1.png",
-    background: "/svg/bg_banner_blue.svg",
-  },
-];
+import data from "@/src/assets/dataHome.json";
 
 const Banner = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const banners = data.banners || [];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,7 +21,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center w-full 3xl:h-[585px] 2xl:h-[530px] xl:h-[450px] h-[350px] overflow-hidden bg-darkBlue">
+    <div className="relative xl:flex items-center justify-center w-full 3xl:h-[585px] 2xl:h-[530px] xl:h-[450px] h-[350px] overflow-hidden bg-darkBlue hidden">
       {banners.map((banner, index) => {
         const isActive = index === currentIndex;
         const isPrev = (index + 1) % banners.length === currentIndex;

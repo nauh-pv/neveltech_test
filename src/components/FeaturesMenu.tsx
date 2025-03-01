@@ -5,7 +5,7 @@ import iconSizes from "../config/iconSizes";
 
 const FeaturesMenu = () => {
   return (
-    <div className="pb-[30px] gap-[10px] grid h-fit w-full grid-cols-4 2xl:grid-cols-7 border-b-[1px] border-white/5">
+    <div className="pb-[30px] gap-[10px] grid h-fit w-full lg:grid-cols-4 grid-cols-3 2xl:grid-cols-7 border-b-[1px] border-white/5">
       <div
         className="flex items-center justify-center rounded-[10px] border-[1px] col-span-1 border-white/10 gap-[13px] h-[57px]
       bg-secondAzure min-[1325px]:hidden"
