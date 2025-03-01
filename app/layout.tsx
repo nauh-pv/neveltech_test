@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased flex items-center justify-center w-full text-[14px]">
+      <body className="antialiased flex items-center justify-center w-full text-[14px] overflow-auto scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-blue-500 scrollbar-track-gray-400">
         <AppProvider>{children}</AppProvider>
       </body>
     </html>
