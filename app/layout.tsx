@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased flex items-center justify-center w-[100vw] text-[14px] overflow-auto scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-blue-500 scrollbar-track-gray-400">
+      <body className="antialiased flex items-center justify-center w-[100vw] text-[14px] overflow-x-hidden scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-blue-500 scrollbar-track-gray-400">
         {children}
       </body>
     </html>
